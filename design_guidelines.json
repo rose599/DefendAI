@@ -1,0 +1,145 @@
+{
+  "design_system": {
+    "identity": {
+      "name": "CyberDefense-E1",
+      "archetype": "Electric & Neon (Archetype 7) + Swiss High-Contrast",
+      "vibe": "Tactical, High-Velocity, Data-Dense, 'The Glass Terminal'",
+      "core_philosophy": "Information is ammunition. Design must be sharp, fast, and high-contrast."
+    },
+    "typography": {
+      "font_family": {
+        "headings": "JetBrains Mono, monospace",
+        "body": "Inter, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "scale": {
+        "h1": "text-4xl md:text-5xl font-bold tracking-tighter uppercase",
+        "h2": "text-2xl md:text-3xl font-bold tracking-tight uppercase",
+        "h3": "text-xl font-semibold tracking-tight",
+        "body": "text-sm leading-relaxed",
+        "mono_label": "text-xs font-mono tracking-wider uppercase opacity-70"
+      },
+      "weights": {
+        "regular": "400",
+        "medium": "500",
+        "bold": "700",
+        "black": "900"
+      }
+    },
+    "colors": {
+      "palette": {
+        "background": "#050505",
+        "foreground": "#E0E0E0",
+        "card": "#0A0A0B",
+        "card_foreground": "#E0E0E0",
+        "popover": "#0A0A0B",
+        "popover_foreground": "#E0E0E0",
+        "primary": "#00F0FF",
+        "primary_foreground": "#000000",
+        "secondary": "#1A1A1D",
+        "secondary_foreground": "#FFFFFF",
+        "muted": "#1A1A1D",
+        "muted_foreground": "#888888",
+        "accent": "#1F1F23",
+        "accent_foreground": "#FFFFFF",
+        "destructive": "#FF003C",
+        "destructive_foreground": "#FFFFFF",
+        "border": "#2A2A2E",
+        "input": "#1A1A1D",
+        "ring": "#00F0FF",
+        "success": "#05FFA1",
+        "warning": "#FFD600",
+        "info": "#2E9AFE"
+      },
+      "gradients": {
+        "red_team": "linear-gradient(135deg, #FF003C 0%, #80001E 100%)",
+        "blue_team": "linear-gradient(135deg, #00F0FF 0%, #007A80 100%)",
+        "rl_agent": "linear-gradient(135deg, #05FFA1 0%, #008050 100%)"
+      }
+    },
+    "visual_enhancers": {
+      "borders": "1px solid rgba(255, 255, 255, 0.1)",
+      "radius": "rounded-none",
+      "shadows": {
+        "glow_primary": "0 0 20px rgba(0, 240, 255, 0.3)",
+        "glow_destructive": "0 0 20px rgba(255, 0, 60, 0.3)",
+        "card": "0 4px 24px -2px rgba(0, 0, 0, 0.5)"
+      },
+      "textures": {
+        "grid": "radial-gradient(circle, rgba(255,255,255,0.05) 1px, transparent 1px) 0 0 / 24px 24px",
+        "scanline": "linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0) 50%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0.2)) 0 0 / 100% 4px"
+      }
+    },
+    "layout": {
+      "spacing": {
+        "container_padding": "p-6 md:p-8",
+        "section_gap": "gap-6",
+        "widget_gap": "gap-4"
+      },
+      "grid_strategy": "Bento Grid Mode B (High Density)",
+      "container_width": "max-w-[1600px] mx-auto"
+    },
+    "components": {
+      "buttons": {
+        "primary": "bg-primary text-primary-foreground hover:bg-primary/90 rounded-none font-mono uppercase tracking-widest text-xs h-10 px-6 shadow-[0_0_10px_rgba(0,240,255,0.4)] transition-all hover:shadow-[0_0_20px_rgba(0,240,255,0.6)]",
+        "destructive": "bg-destructive text-destructive-foreground hover:bg-destructive/90 rounded-none font-mono uppercase tracking-widest text-xs h-10 px-6 shadow-[0_0_10px_rgba(255,0,60,0.4)]",
+        "outline": "border border-primary/50 text-primary hover:bg-primary/10 rounded-none font-mono uppercase tracking-widest text-xs h-10 px-6"
+      },
+      "cards": {
+        "base": "bg-card border border-border rounded-none relative overflow-hidden",
+        "header": "border-b border-border p-4 bg-secondary/30 backdrop-blur-sm",
+        "content": "p-4"
+      },
+      "badges": {
+        "base": "rounded-none px-2 py-0.5 text-[10px] font-mono uppercase tracking-wider border",
+        "success": "bg-success/10 text-success border-success/20",
+        "warning": "bg-warning/10 text-warning border-warning/20",
+        "destructive": "bg-destructive/10 text-destructive border-destructive/20",
+        "outline": "bg-transparent border-border text-muted-foreground"
+      }
+    },
+    "motion": {
+      "transitions": "transition-all duration-200 ease-out",
+      "hover_effects": "hover:translate-y-[-1px] hover:brightness-110",
+      "loading": "animate-pulse"
+    },
+    "charts": {
+      "library": "recharts",
+      "theme": {
+        "background": "transparent",
+        "text_color": "#888888",
+        "grid_color": "#333333",
+        "tooltip_bg": "#0A0A0B",
+        "tooltip_border": "#333333"
+      }
+    },
+    "media": {
+      "image_urls": {
+        "background_abstract": "https://images.unsplash.com/photo-1652028506778-002ebfd287f1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHwzfHxjeWJlcnNlY3VyaXR5JTIwc2VydmVyJTIwcm9vbSUyMGRhcmslMjBhYnN0cmFjdHxlbnwwfHx8fDE3Njk0NDc4MjN8MA&ixlib=rb-4.1.0&q=85",
+        "code_texture": "https://images.unsplash.com/photo-1759661881353-5b9cc55e1cf4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODd8MHwxfHNlYXJjaHw0fHxjeWJlcnNlY3VyaXR5JTIwc2VydmVyJTIwcm9vbSUyMGRhcmslMjBhYnN0cmFjdHxlbnwwfHx8fDE3Njk0NDc4MjN8MA&ixlib=rb-4.1.0&q=85",
+        "server_room": "https://images.pexels.com/photos/1181320/pexels-photo-1181320.jpeg"
+      }
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. SETUP: Install 'lucide-react' for icons and 'recharts' for charts immediately.",
+    "2. THEME: Apply the dark theme colors globally in 'index.css'. Force the app into dark mode by default.",
+    "3. FONTS: Import 'JetBrains Mono' from Google Fonts for all headings and code elements.",
+    "4. LAYOUT: Use the 'Bento Grid' strategy. The dashboard should feel like a cockpit. Use 'grid-cols-12' for the main layout.",
+    "5. COMPONENTS: Customize Shadcn components to remove rounded corners ('rounded-none'). This is a strict tactical UI.",
+    "6. VISUALS: Add a subtle 'scanline' overlay using `pointer-events-none fixed inset-0 z-50` with the texture defined in visual_enhancers.",
+    "7. CHARTS: Use Recharts. Style them minimally. Remove grid lines if possible, or make them very subtle (#222). Use the neon colors for data lines.",
+    "8. DATA-TESTID: Every interactive element (buttons, inputs, chart containers) MUST have a 'data-testid' attribute (e.g., 'attack-start-btn', 'metrics-chart').",
+    "9. DASHBOARD: The main view should have a 'Live Feed' of logs on the side, and 'Attack Status' prominent at the top.",
+    "10. SIMULATION: The 'Attack Simulation' panel should look like a control board. Use toggle switches and distinct 'Start/Stop' buttons."
+  ],
+  "universal_guidelines": [
+    "Do not use gradients for backgrounds, only for accents.",
+    "Avoid 'Inter' for headings. Use 'JetBrains Mono'.",
+    "Use 2-3x more spacing than typical designs.",
+    "Every interaction needs micro-animations.",
+    "Never use AI assistant Emoji characters.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters (12-24px blur) for overlays."
+  ]
+}
